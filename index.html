@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Mercy ❤️</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Music -->
+  <audio id="music" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_0c1c1c06e4.mp3?filename=romantic-piano-112191.mp3" type="audio/mp3">
+  </audio>
+
+  <div class="music-btn" onclick="toggleMusic()">▶️</div>
+
+  <!-- Page 1 -->
+  <div class="page active" id="page1">
+    <h1>Hey Mercy ❤️</h1>
+    <p class="type" data-text="This is something special… Just for you 💖"></p>
+    <button onclick="nextPage(1)">Open My Heart 💌</button>
+  </div>
+
+  <!-- Page 2 -->
+  <div class="page" id="page2">
+    <h1>My Letter To You 💕</h1>
+    <div class="letter">
+      <p>My Love ❤️,</p>
+      <p>I know we haven’t known each other for a long time, but in this short time, you have already become very special to me.</p>
+      <p>I love everything about you — your smile, your voice, your heart, and the way you make me feel happy.</p>
+      <p>When I talk to you, my day becomes better. When I think about you, I smile without knowing. You are my peace and my joy. 💖</p>
+      <p>I may not be perfect, but my feelings for you are real. I care about you, I respect you, and I will always try my best for you.</p>
+      <p>Thank you for coming into my life. Thank you for being you.</p>
+      <p>I choose you. Today and always ❤️</p>
+      <p>With all my heart,<br>Deopzy 💕</p>
+    </div>
+    <button onclick="nextPage(2)">Next 💗</button>
+  </div>
+
+  <!-- Page 3 -->
+  <div class="page" id="page3">
+    <h1>I Love You Because… 😍</h1>
+    <p class="type" data-text="You make me smile without trying 😌"></p>
+    <p class="type" data-text="You give me peace 🕊️"></p>
+    <p class="type" data-text="You understand me 💞"></p>
+    <p class="type" data-text="You are my Queen 👑"></p>
+    <button onclick="nextPage(3)">One More 💝</button>
+  </div>
+
+  <!-- Page 4 -->
+  <div class="page" id="page4">
+    <h1>Secret For You 🎁</h1>
+    <p>Tap the button 3 times 😏</p>
+    <button id="secretBtn">Tap Me 💕</button>
+  </div>
+
+  <!-- Page 5 -->
+  <div class="page" id="page5">
+    <h1>Will You Be My Valentine? 💍❤️</h1>
+    <p>Today. Tomorrow. Always.</p>
+    <button onclick="celebrate()">YES 😍</button>
+  </div>
+<!-- Custom Popup -->
+<div class="popup-overlay" id="popup">
+  <div class="popup">
+    <h2>Happy Valentine’s Day Mercy ❤️</h2>
+    <p>Love, Deopzy 💕</p>
+    <button onclick="closePopup()">OK 💖</button>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
